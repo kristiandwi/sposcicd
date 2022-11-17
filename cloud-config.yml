@@ -1,0 +1,16 @@
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC0trmIjQfXUn3ysjPJ9NN2xPmnmixe5MJBJrgf4QYfr6btZhE3liqepHbJtWnyVqt9vnutBfYd+XmRvTtUlU/4p+Nsce6hSeYmL8qp7fbg6NsHcOzQC3ZLvHg/8gly+uPBbYGZolIUaZwZ9eKbgigJR74lkb0Cgy/ejg7svlm2dIbOaEcS/aYaFqxtHcyKJyzziO1vWSQdzMF4y4y1zNdOKHwQQmNRpFsuqlhulhH884GD+2idjDLWenwM7DOtjljeFE0rkF9mavDYVtOfTE4OFcztmFumNvU3UFOxSMLjYFGxY82R5zGph6jHTa9QyHvY8gn6QVZ9k5BAnwi6utzz+arTRCapE+e6rhDJnWrYhK7e+C/A54TPb4TNz/JLs7gSmq7iwv3SKGCNxWKUgTnoRp/4tMZRZRefcO/HpVdYuzpNqMqjBT5/4Q2xiBRVFYDH2fA1ScL3k0dxmimJPgVRXDabZxd6kiDb+klDbJhx0Umy0JoOam8y95EfxAPrdrs= krist@DEVOPS
+hostname: rancheros.solopos.com
+rancher:
+  network:
+    interfaces:
+      eth0:
+        address: 172.16.100.70/24
+        gateway: 172.16.100.1
+        mtu: 1500
+        dhcp: false
+    dns:
+      nameservers:
+        - 172.16.100.1
+        - 8.8.8.8
+        
